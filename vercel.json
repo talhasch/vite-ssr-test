@@ -1,0 +1,17 @@
+{
+  "github": {
+    "silent": false
+  },
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@now/node"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/u/(.*)",
+      "destination": "server.js"
+    }
+  ]
+}
