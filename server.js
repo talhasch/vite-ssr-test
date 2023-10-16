@@ -12,7 +12,7 @@ app.get('*', function (req, res) {
 
 // express.static(path.resolve(__dirname, '.', 'assets'), { maxAge: '30d' })
 app.listen(PORT, () => {
-  // console.log(`⚡️[server]: Server is running at http://127.0.0.1:${PORT}`);
+  console.log(`⚡️[server]: Server is running at http://127.0.0.1:${PORT}`);
 });
 
 module.exports = app;
