@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/u/:username", "destination": "/apix" }
+    { "source": "/u/:username", "destination": "/api/:username" }
   ]
 }
