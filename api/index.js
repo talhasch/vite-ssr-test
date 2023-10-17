@@ -1,6 +1,6 @@
 const app = require('express')();
 
-app.get('/u', (req, res) => {
+app.get('/api', (req, res) => {
   res.send('hello from express');
 });
 
