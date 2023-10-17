@@ -8,7 +8,7 @@ app.get('/u/:username', (req, res) => {
   const tags = `
     <title>${username}'s page</title>
   `;
-  const modified = index.replace(/<!-- meta -->(.*)<!-- \/meta -->/, tags);
+  const modified = index.replace(/<!-- meta -->((.|\n|r)+)<!-- \/meta -->/m, tags);
   res.send(modified);
 });
 
