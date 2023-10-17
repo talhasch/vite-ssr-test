@@ -3,7 +3,7 @@ const path = require('path');
 const app = require('express')();
 
 app.get('/u/:username', (req, res) => {
-  const index = fs.readFileSync(path.join(process.cwd(), 'dist', 'index.html'), 'utf-8');
+  const index = fs.readFileSync(path.join(process.cwd(), 'dist', 'index.html'), 'utf-8').toString();
   const {username} = req.params;
   const tags = `<!-- meta -->
     <title>${username}'s page</title>
