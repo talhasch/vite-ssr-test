@@ -1,3 +1,5 @@
 {
-  "rewrites": [{ "source": "/apix/(.*)", "destination": "/apix" }]
+  "rewrites": [
+    { "source": "/u*", "destination": "/apix*" }
+  ]
 }
