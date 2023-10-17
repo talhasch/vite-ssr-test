@@ -7,6 +7,7 @@ app.get('/u/:username', (req, res) => {
   const {username} = req.params;
   const tags = `
     <title>${username}'s page</title>
+    <meta name="description" content="All about ${username}">
   `;
   const modified = index.replace(/<!-- meta -->((.|\n|r)+)<!-- \/meta -->/m, tags);
   res.send(modified);
