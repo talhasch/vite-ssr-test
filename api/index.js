@@ -24,6 +24,8 @@ const preparePage = (title, description, image) => {
   return indexManipulated.replace(TITLE_SELECTOR, title).replace(DESCRIPTION_SELECTOR, description).replace(IMAGE_SELECTOR, image);
 }
 
+console.log(preparePage('foo', 'bar', 'baz'))
+
 
 app.get('/u/:username', (req, res) => {
   const { username } = req.params;
