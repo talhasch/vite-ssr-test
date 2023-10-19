@@ -9,6 +9,21 @@
             name="description"
             content="Console is the most secure Web3 chat app offering NFT token gating, decentralized identity, events, and DAO tooling."
     />
+    <script>
+      /**
+       * https://github.com/bevacqua/dragula/issues/602
+       * Fix vite error: global is not defined
+       */
+      var global = global || window;
+    </script>
+    <script>
+      /**
+       * https://github.com/apollographql/apollo-client/issues/8674
+       * Fixe vite error: __DEV__ is not defined
+       * @type {boolean}
+       */
+      this['__DEV__'] = false;
+    </script>
   </head>
   <body>
     <div id="root"></div>
